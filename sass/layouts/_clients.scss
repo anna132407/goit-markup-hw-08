@@ -1,0 +1,41 @@
+.clients-svg {
+    fill: var(--link-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+                .clients-link:hover &,
+                .clients-link:focus & {
+                    fill: var(--accent-color);
+                }
+}
+
+.clients-link {
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    width: 210px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            fill: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+                @media screen and (min-width: 768px) {
+                    width: 226px;
+                }
+                                @media screen and (min-width: 1200px) {
+                                    width: 170px;
+                                }
+}
+
+.clients-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
