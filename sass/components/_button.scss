@@ -1,6 +1,6 @@
 .hero__button {
     border: 1px solid transparent;
-    padding: 10px 32px;
+    padding: 10px 24px;
     cursor: pointer;
     background-color: var(--accent-color);
     font-family: inherit;
@@ -12,5 +12,7 @@
     color: var(--primary-white-color);
     border-radius: 4px;
     min-width: 152px;
-
+@media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
 }
