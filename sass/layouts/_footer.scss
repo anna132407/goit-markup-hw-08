@@ -2,6 +2,7 @@
     background-color: var(--hero-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 
 .lp {
@@ -9,6 +10,9 @@
     margin-bottom: 20px;
     padding-top: 0;
     padding-bottom: 0;
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 
 .footer-address {
@@ -40,6 +44,9 @@
 .list-item-f {
     margin-top: 0;
     margin-bottom: 9px;
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 
 .footer-title {
@@ -50,22 +57,37 @@
     color: var(--primary-white-color);
     margin-bottom: 20px;
     font-size: 14px;
+    @media screen and (min-width: 1200px) {
+         text-align: left;   
+        }
+}
+
+.title-form{
+    @media screen and (min-width: 1200px) {
+    margin-left: 55px;
+    }
 }
 
 .footer-poz {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 70px;
-    margin-right: 0;
-    margin-left: 0;
+    @media screen and (min-width: 768px) {
+            align-items: baseline;;
+        }
+    @media screen and (min-width: 1200px) {
+            justify-content: flex-start;
+        }
 }
 
 .footer-join{
-    padding-left: 124px;
-    padding-right: 124px;
     display: block;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
 }
 
 .footer-link {
@@ -94,21 +116,23 @@
 
 .footer-form-field {
     position: relative;
-    
 }
 
 .footer-form {
-    //margin-left: 55px;
     padding-left: 0;
     padding-right: 0;
     display: block;
-    align-items: center;
-    
+    align-items: center; 
+
 }
 
 .footer-form-input {
     width: 450px;
     height: 50px;
+    @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin-left: 55px;
+        }
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -141,15 +165,21 @@
     margin-left: 140px;
     margin-right: 140px;
     margin-top: 30px;
-    //position: absolute;
     padding: 10px 62px 10px 28px;
+    @media screen and (min-width: 1200px) {
+            position: absolute;
+            top: -62%;
+            left: 67%;
+        }
 }
 
 
 .footer-form-svg {
     position: absolute;
-    // right: -45%;
-    // top: 13px;
     left: 60%;
     top: 70%;
+    @media screen and (min-width: 1200px) {
+    left: 135%;
+    top: 13px;
+    }
 }
