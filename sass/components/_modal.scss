@@ -7,6 +7,8 @@
     background-color: rgba(0, 0, 0, 0.1);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 93px 15px;
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -20,8 +22,6 @@
 }
 
 .modal {
-    min-width: 528px;
-    min-height: 581px;
     border-radius: 4px;
     background-color: var(--primary-white-color);
     position: absolute;
@@ -29,7 +29,14 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+@media screen and (min-width: 480px) {
+        min-width: 450px;
+        min-height: 609px;
+    }
+    @media screen and (min-width: 1200px) {
+    min-width: 528px;
+        min-height: 581px;  
+    }
 
 }
 
@@ -60,20 +67,26 @@
 }
 
 .modal-form {
-    width: 448px;
+    max-width: 448px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 .modal-title {
+    width: 370px;
     margin-top: 40px;
     margin-bottom: 12px;
+    margin-left: 40px;
     text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     color: var(--title-text-color);
+    @media screen and (min-width: 1200px) {
+            width: auto;
+            margin-left: 0;
+        }
 }
 
 .form-field {
@@ -132,7 +145,10 @@ textarea::placeholder {
 }
 
 .check-text {
-    font-size: 14px;
+    font-size: 12px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        }
     color: #5a5d6b;
     display: flex;
     margin-bottom: 30px;

@@ -18,7 +18,7 @@
 
 <body>
     <!-- Шапка сайта -->
-    <!--<header>
+    <header>
 	<div class="container main-nav">
         <nav class="main-nav">
             <a href="./index.html" class="logo"><span class="logo__item">Web</span>Studio</a>
@@ -30,19 +30,51 @@
             </ul>
         </nav>
 
+        
         <ul class="site-nav list general-communication">
-            <li class="site-nav__item">
-            <a href="mailto:info@devstudio.com" class="site-nav__communication site-nav__link general-communication">
+            <div class="site-nav-table">
+            <li class="site-nav__item item-address">
+            <a href="mailto:info@devstudio.com" class="site-nav__communication general-communication link-address">
                 <svg class="site-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope1"></use>
             </svg>info@devstudio.com</a></li>
-            <li class="site-nav__item"><a href="tel:+380961111111" class="site-nav__communication site-nav__link general-communication">
+            <li class="site-nav__item item-address"><a href="tel:+380961111111" class="u site-nav__communication link-address general-communication">
                 <svg class="site-nav__icon" width="10" height="16">
         <use href="./images/icons.svg#icon-smartphone1"></use></svg>
-        +38 096 111 11 11</a></li>
+        +38 096 111 11 11</a></li></div>
         </ul>
+        <button type="button" class="menu-open" data-menu-open><svg width="40" height="40"><use href="./images/icons.svg#icon-menu"></use></svg></button>
      </div>
-    </header>-->
+     <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container container">
+        <div class="mob-menu-top">
+        <button type="button" class="menu-close" data-menu-close><svg width="40" height="40">
+                <use href="./images/icons.svg#close"></use>
+            </svg></button>
+            
+            <ul class="list mob-list">
+                <li class="mob-list-item"><a href="" class="mob-list-link">Студія</a></li>
+                <li class="mob-list-item"><a href="./portfolio.html" class="mob-list-link">Портфоліо</a></li>
+                <li class="mob-list-item"><a href="" class="mob-list-link">Контакти</a></li>
+            </ul></div>
+            <div class="mob-menu-bottom">
+            <ul class="list">
+                <li class="mob-list-item"><a href="tel:+380961111111" class="mob-list-tel">
+                        +38 096 111 11 11</a></li>
+                <li class="mob-list-item-mail">
+                    <a href="mailto:info@devstudio.com" class="mob-list-mail">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="list mob-soc-list">
+                <li class="mob-list-soc"><a class="mob-list-item-soc" target="_blank" href="https://www.instagram.com">Instagram</a></li>
+                <li class="mob-list-soc"><a class="mob-list-item-soc" target="_blank" href="https://www.twitter.com">Twitter</a></li>
+                <li class="mob-list-soc"><a class="mob-list-item-soc" target="_blank" href="https://www.facebook.com">Facebook</a></li>
+                <li class="mob-list-soc"><a class="mob-list-item-soc" target="_blank" href="https://www.linkedin.com">Linkedin</a></li>
+            </ul></div>
+            </div>
+     </div>
+    </header>
 
     <main>
         <!-- Герой -->
@@ -110,15 +142,36 @@
 
             <ul class="photo-list list">
                 <li class="photo-p">
-                    <img src="./images/box1.jpg" alt="Набір коду за блок-схемою" width="370" height="294">
+                    <picture>
+                        <source srcset="./images/box1.jpg 1x,
+                                        ./images/box1-2x.jpg 2x" media="(min-width: 1200px)">
+                    </picture>
+                    <img src="./images/box1.jpg"
+                    srcset="./images/box1.jpg 1x,
+                    ./images/box1-2x.jpg 2x" 
+                     alt="Набір коду за блок-схемою" width="370" height="294">
                         <p class="photo-descr-text">Десктопні додатки</p>
                 </li>
                 <li class="photo-p">
-                    <img src="./images/box2.jpg" alt="Розробка мобільного додатку" width="370" height="294">
+                    <picture>
+                        <source srcset="./images/box2.jpg 1x,
+                        ./images/box2-2x.jpg 2x" media="(min-width: 1200px)">
+                    </picture>
+                    <img src="./images/box2.jpg" 
+                    srcset="./images/box2.jpg 1x,
+                    ./images/box2-2x.jpg 2x" 
+                    alt="Розробка мобільного додатку" width="370" height="294">
                     <p class="photo-descr-text">Мобільні додатки</p>
                 </li>
                 <li class="photo-p">
-                    <img src="./images/box3.jpg" alt="Кольоровий спектр на планшеті" width="370" height="294">
+                    <picture>
+                        <source srcset="./images/box3.jpg 1x,
+                        ./images/box3-2x.jpg 2x" media="(min-width: 1200px)">
+                    </picture>
+                    <img src="./images/box3.jpg" 
+                    srcset="./images/box3.jpg 1x,
+                    ./images/box3-2x.jpg 2x" 
+                    alt="Кольоровий спектр на планшеті" width="370" height="294">
                     <p class="photo-descr-text">Дизайнерські рішення</p>
                 </li>
             </ul>
@@ -398,7 +451,8 @@
 </div>
 </div>
 
-<script src="./js/modal.js"></script>-->
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>
