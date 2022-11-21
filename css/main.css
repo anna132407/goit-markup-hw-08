@@ -352,18 +352,7 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .site-nav__item:nth-child(-n+3) {
-    margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav .site-nav__item:not(:last-child) {
-    margin-right: 50px;
+    gap: 50px;
   }
 }
 
@@ -371,6 +360,11 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    align-items: baseline;
+  }
 }
 
 .header {
@@ -462,7 +456,7 @@ textarea::placeholder {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
-  margin-left: 96px;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .site-nav-table {
@@ -473,6 +467,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .site-nav-table {
     display: flex;
+    column-gap: 30px;
     padding-top: 0;
     padding-bottom: 0;
     margin-left: 0;
