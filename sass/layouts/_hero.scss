@@ -48,7 +48,7 @@
                 url("../images/hero2px-mob.jpg");
         }
     
-        @media screen and (min-width: 480px) and (max-width: 767px) {
+        @media screen and (min-width: 768px) {
             background-image: linear-gradient(to right, #2f303a66 0%, #2f303a66 100%),
                 url("../images/hero1px-tab.jpg");
     
@@ -60,7 +60,7 @@
             }
         }
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
             background-image: linear-gradient(to right, #2f303a66 0%, #2f303a66 100%),
                 url("../images/hero1px-desk.jpg");
     
